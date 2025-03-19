@@ -16,12 +16,13 @@ const orderSchema = new mongoose.Schema(
       ref: "Product",
     },
     product_details: {
+  
       name: String,
       image: Array,
     },
     payment_id: {
       type: String,
-      debugger: true,
+      default: true,
     },
     package_status: {
       type: String,
