@@ -39,7 +39,7 @@ const orderSchema = new mongoose.Schema(
       type: Number,
       default: 0,
     },
-    invioce_recive: {
+    invoice_receipt: {
       type: String,
     },
   },
