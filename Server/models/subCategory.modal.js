@@ -3,7 +3,7 @@ const subCategorySchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      default: true,
+      default:"",
     },
     image: {
       type: String,
@@ -11,7 +11,7 @@ const subCategorySchema = new mongoose.Schema(
     },
     category: [
       {
-        type: mongoose.Schema.ObjectIdentifier,
+        type: mongoose.Schema.ObjectId,
         ref: "Category",
       },
     ],
